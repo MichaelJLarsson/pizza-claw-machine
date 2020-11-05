@@ -1,38 +1,48 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-image: url("./resources/Yellow_Backdrop.png");
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pizza-boxes {
+  min-width: 100%;
+  height: 187px;
+  background-image: url("./resources/PizzaPile.png");
+  background-position: center -928px;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-top {
+  background-image: url("./resources/Table_Top.png");
+  background-position: bottom center;
+  min-width: 100%;
+  height: 341px;
+}
+
+.claw {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.claw .claw-base {
+  position: absolute;
+  background-image: url("./resources/Claw_Base.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 700px;
+  left: 50%;
+  top: -550px;
+}
+
+.claw .claw-arm-right {
+  background-image: url("./resources/Claw_Arm_Right.png");
+}
+.claw .claw-arm-left {
 }
