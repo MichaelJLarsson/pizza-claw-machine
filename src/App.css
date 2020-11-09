@@ -1,3 +1,5 @@
+/* Static components */
+
 .App {
   text-align: center;
   background-image: url("./resources/Yellow_Backdrop.png");
@@ -5,7 +7,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
 }
 
@@ -14,7 +16,15 @@
   height: 187px;
   background-image: url("./resources/PizzaPile.png");
   background-position: center -928px;
-  display: block;
+}
+
+.pizza-box {
+  background-image: url("./resources/SingleBox.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 250px;
+  position: absolute;
 }
 
 .table-top {
@@ -24,10 +34,13 @@
   height: 341px;
 }
 
+/* Claw */
+
 .claw {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 200px;
+  margin: 0 auto auto;
+  position: relative;
 }
 
 .claw .claw-base {
@@ -35,14 +48,27 @@
   background-image: url("./resources/Claw_Base.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position-x: 50%;
   width: 100px;
   height: 700px;
-  left: 50%;
   top: -550px;
 }
 
-.claw .claw-arm-right {
-  background-image: url("./resources/Claw_Arm_Right.png");
+.claw .claw-arm {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 137px;
 }
-.claw .claw-arm-left {
+
+.claw .claw-arm.claw-arm-right {
+  background-image: url("./resources/Claw_Arm_Right.png");
+  right: -38px;
+}
+
+.claw .claw-arm.claw-arm-left {
+  background-image: url("./resources/Claw_Arm_Left.png");
+  left: -38px;
 }
